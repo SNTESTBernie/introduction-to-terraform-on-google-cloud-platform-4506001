@@ -1,8 +1,6 @@
 variable "project_id" {
     type = string
     default = "long-loop-445615-p0"
-    region  = "us-west1"
-    zone    = "us-west1-a"
 }
 
 variable "region" {
