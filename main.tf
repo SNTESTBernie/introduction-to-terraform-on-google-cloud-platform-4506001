@@ -6,7 +6,7 @@ resource "google_compute_network" "app" {
 resource "google_compute_subnetwork" "app" {
   name          = var.network_name
   ip_cidr_range = var.network_ip_range
-  region        = var.var_region
+  region        = var.var.region
   network       = google_compute_network.app.id
 }
 
