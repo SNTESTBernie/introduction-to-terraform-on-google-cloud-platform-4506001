@@ -7,7 +7,7 @@ module "app_network" {
 
   subnets = [
        {
-         subnet_name    = "{$var.network_name}-subnet0"
+         subnet_name    = "${var.network_name}-subnet0"
          subnet_ip      = var.network_ip_range
          subnet_region  = var.region
         }
